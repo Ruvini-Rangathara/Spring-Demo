@@ -22,4 +22,9 @@ public class Student {
         return "Student Data : "+id;
     }
 
+    @GetMapping("student/{id}/{code}")
+    public String getStudentDetailsWithMultiParas(@PathVariable String id, @PathVariable int code){
+        return "multi para : "+id+"    "+code;
+    }
+
 }
