@@ -2,6 +2,8 @@ package com.example.spring1;
 
 import com.example.spring1.config.WebAppConfig;
 import com.example.spring1.config.WebRootConfig;
+import jakarta.servlet.MultipartConfigElement;
+import jakarta.servlet.ServletRegistration;
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 
 //starting point
@@ -20,4 +22,6 @@ public class WebAppInitializer extends AbstractAnnotationConfigDispatcherServlet
     protected String[] getServletMappings() {
         return new String[]{"/"};
     }
+
+
 }

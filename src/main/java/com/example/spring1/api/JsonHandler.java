@@ -17,3 +17,4 @@ public class JsonHandler {
         return new ResponseEntity<>(new JsonData("J001", "Ruvini","Panadura"), HttpStatus.CREATED);
     }
 }
+
